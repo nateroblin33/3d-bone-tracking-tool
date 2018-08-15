@@ -12,7 +12,7 @@ Each program can be run directly from the shell.
 
 ## Download
 
-The 3D Bone Tracking Tool programs can be installed [here](http://www.google.com/).
+The 3D Bone Tracking Tool programs can be installed [here](https://github.com/nateroblin33/3d-bone-tracking-tool/tree/master/files).
 
 In order to run, they will need to be in the same directory as the [pyrealsense2](https://pypi.python.org/pypi/pyrealsense2) (instructions for installation [here](https://github.com/IntelRealSense/librealsense/tree/master/wrappers/python)) and [imutils](https://github.com/jrosebr1/imutils) (download as a .zip folder, then extract and move the "imutils" subfolder to the directory) packages, as well as [plyfile.py](https://github.com/dranjan/python-plyfile/blob/master/plyfile.py).
 
