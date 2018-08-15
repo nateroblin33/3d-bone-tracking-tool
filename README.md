@@ -107,8 +107,11 @@ Pitch:
 ## Example Uses
 *Note: Animated GIFs are composed of Point Cloud files rendered in MeshLab*
 
-### manualframe.py
+### Carpal Bones
+This example shows how each program tracks the carpal (wrist) bones when the a hand is closed and opened. Bones tracked are (clockwise from top right) the trapezoid, capitate, hamate, triquetrum, lunate, and scaphoid.
+
+#### manualframe.py
 ![4frameanimation](https://cdn.pbrd.co/images/HzkiM7o.gif)
 
-### speedcam.py
+#### speedcam.py
 ![shortRTanimation](https://cdn.pbrd.co/images/HzklWxi.gif)
