@@ -1,4 +1,4 @@
-![logo3DBTThttps://cdn.pbrd.co/images/HzjQAxU.png](https://cdn.pbrd.co/images/HzjSbKT.png)
+![logo3DBTThttps://cdn.pbrd.co/images/HzjQAxU.png](https://cdn.pbrd.co/images/HzjSbKT.png "3D Bone Tracking Tool Logo")
 # 3D Bone Tracking Tool
 
 The 3D Bone Tracking Tool is a pair of Python 2.7 programs that interface with Intel® RealSense™ depth cameras (D400 series). The purpose of these is programs is to track the movement of bones in 3D space - tracking both real-world (x,y,z) coordinates and angles of rotation (roll, yaw, and pitch) using colored dots.
@@ -111,7 +111,7 @@ Pitch:
 This example shows how each program tracks the carpal (wrist) bones when the a hand is closed and opened. Bones tracked are (clockwise from top right) the trapezoid, capitate, hamate, triquetrum, lunate, and scaphoid.
 
 #### manualframe.py
-![4frameanimation](https://cdn.pbrd.co/images/HzkiM7o.gif)
+![4frameanimation](https://cdn.pbrd.co/images/HzkiM7o.gif "Carpal Animation - manualframe.py")
 
 #### speedcam.py
-![shortRTanimation](https://cdn.pbrd.co/images/HzklWxi.gif)
+![shortRTanimation](https://cdn.pbrd.co/images/HzklWxi.gif "Carpal Animation - speedcam.py")
