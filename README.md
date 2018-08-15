@@ -105,4 +105,10 @@ Pitch:
     #bone6FileName = 'bone6FileName.ply'
 
 ## Example Uses
+*Note: Animated GIFs are composed of Point Cloud files rendered in MeshLab*
 
+### manualframe.py
+![4frameanimation](https://cdn.pbrd.co/images/HzkiM7o.gif)
+
+### speedcam.py
+![shortRTanimation](https://cdn.pbrd.co/images/HzklWxi.gif)
