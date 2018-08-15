@@ -3,8 +3,10 @@
 
 The 3D Bone Tracking Tool is a pair of Python 2.7 programs that interface with Intel® RealSense™ depth cameras (D400 series). The purpose of these is programs is to track the movement of bones in 3D space - tracking both real-world (x,y,z) coordinates and angles of rotation (roll, yaw, and pitch) using colored dots.
 
- * manualframe.py allows the user to save data from specific frames manually after calibrating (stop-motion tracking)
- * speedcam.py automatically saves data from every frame (10 fps) after calibrating (real-time tracking)
+|Program|Description|
+|:------|:----------|
+|manualframe.py|Allows the user to save data from specific frames manually after calibrating (stop-motion tracking)|
+|speedcam.py|Automatically saves data from every frame (10 fps) after calibrating (real-time tracking)|
 
 Each program can be run directly from the shell.
 
