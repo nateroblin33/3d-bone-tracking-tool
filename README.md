@@ -118,6 +118,7 @@ Pitch:
 *Note: Animated GIFs are composed of Point Cloud files rendered in MeshLab*
 
 ### Carpal Bones
+![HandChart](https://cdn.pbrd.co/images/Hzsig6o.png "Carpal Color Dots Chart")
 This example shows how each program tracks the carpal (wrist) bones when the a hand is closed and opened. Bones tracked are (clockwise from top right) the trapezoid, capitate, hamate, triquetrum, lunate, and scaphoid.
 
 #### manualframe.py
