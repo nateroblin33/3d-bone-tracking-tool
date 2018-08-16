@@ -1612,6 +1612,11 @@ while True:
     # If any color is being tracked, (for one frame every 2 seconds) display all Depth/Coord values, Euclidean Distance values between Black, Red, and Purple, and Roll/Yaw/Pitch values every 1/5 of a second; then, reset all coordinates to (0,0)
     else:
         if ptrue == 1:
+            if badframe == 0:
+                dtNOW = datetime.now()
+                day = str(dtNOW).split()
+                time = day[1].split('.')
+                dtFix = day[0] + "_" + time[0] + "_" + time[1]
             
             badframe = 0
             
@@ -1848,10 +1853,10 @@ while True:
             if ryp == 8:
                 #if xg1 == 0 or yg1 == 0 or xb1 == 0 or yb1 == 0 or xy1 == 0 or yy1 == 0 or xr1 == 0 or yr1 == 0 or xo1 == 0 or yo1 == 0 or xp1 == 0 or yp1 == 0 or xu1 == 0 or yu1 == 0 or xt1 == 0 or yt1 == 0 or xw1 == 0 or yw1 == 0 or xg2 == 0 or yg2 == 0 or xb2 == 0 or yb2 == 0 or xy2 == 0 or yy2 == 0 or xr2 == 0 or yr2 == 0 or xo2 == 0 or yo2 == 0 or xp2 == 0 or yp2 == 0 or xu2 == 0 or yu2 == 0 or xt2 == 0 or yt2 == 0 or xw2 == 0 or yw2 == 0:
                 if badframe == 0:
-                    createPC(pointg1, pointg2, pointb1, pointb2, pointy1, pointy2, pointr1, pointr2, pointo1, pointo2, pointp1, pointp2, pointu1, pointu2, pointt1, pointt2, pointw1, pointw2, "frame" + str(framePC) + "lunate.ply", "frame" + str(framePC) + "capitate.ply", "frame" + str(framePC) + "hamate.ply", "frame" + str(framePC) + "scaphoid.ply", "frame" + str(framePC) + "trapezoid.ply", "frame" + str(framePC) + "triquetrum.ply")
+                    createPC(pointg1, pointg2, pointb1, pointb2, pointy1, pointy2, pointr1, pointr2, pointo1, pointo2, pointp1, pointp2, pointu1, pointu2, pointt1, pointt2, pointw1, pointw2, "frame" + str(framePC) + "lunate" + dtFix + ".ply", "frame" + str(framePC) + "capitate" + dtFix + ".ply", "frame" + str(framePC) + "hamate" + dtFix + ".ply", "frame" + str(framePC) + "scaphoid" + dtFix + ".ply", "frame" + str(framePC) + "trapezoid" + dtFix + ".ply", "frame" + str(framePC) + "triquetrum" + dtFix + ".ply")
             
             if ryp == 8 and badframe == 0:
-                f = open('framedata' + str(framePC) + '.txt', 'w')
+                f = open('frame' + str(framePC) + 'data' + dtFix + '.txt', 'w')
                 f.write("[Lunate (wpb/k), roll, yaw, pitch]" + "\n")
                 f.write(str(depthw1) + "\n")
                 f.write(str(depthp1) + "\n")
