@@ -35,7 +35,7 @@ In order to run, they will need to be in the same directory as the [pyrealsense2
     normalize(v):
         return v / norm
         
-    #v = Initial Vector ([x,y,z])
+    #v = Initial Vector ([Δx,Δy,Δz])
     #v / norm = Normalized Vector ([Δx,Δy,Δz])
 
 *Angle Calculation functions:*
