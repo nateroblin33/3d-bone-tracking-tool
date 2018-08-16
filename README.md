@@ -36,7 +36,7 @@ In order to run, they will need to be in the same directory as the [pyrealsense2
 
 *Vector Normailzation function:*
 
-    normalize(v):
+    def normalize(v):
         return v / norm
         
     #v = Initial Vector ([Δx,Δy,Δz])
@@ -46,7 +46,7 @@ In order to run, they will need to be in the same directory as the [pyrealsense2
 
 Roll:
   
-    roll(p1, p2, p3, baseline):
+    def roll(p1, p2, p3, baseline):
         return roll
         
     #roll = Roll angle relative to baseline (in degrees)
@@ -56,7 +56,7 @@ Roll:
     #baseline = Baseline roll angle (in degrees)
 Yaw:
   
-    yaw(p1, p2, p3, baseline):
+    def yaw(p1, p2, p3, baseline):
         return yaw
         
     #yaw = Yaw angle relative to baseline (in degrees)
@@ -66,7 +66,7 @@ Yaw:
     #baseline = Baseline yaw angle (in degrees)
 Pitch:
   
-    pitch(p1, p2, p3, baseline):
+    def pitch(p1, p2, p3, baseline):
         return pitch
         
     #pitch = Pitch angle relative to baseline (in degrees)
@@ -77,7 +77,7 @@ Pitch:
 
 *Euclidean Distance Calculation function:*
 
-    euclideanDist(p1, p2):
+    def euclideanDist(p1, p2):
         return dist
         
     #dist = Euclidean distance between two points
@@ -86,7 +86,7 @@ Pitch:
 
 *Point Cloud File Creation function:*
 
-    createPC(pointg1, pointg2, pointb1, pointb2, pointy1, pointy2, pointr1, pointr2, pointo1, pointo2, pointp1, pointp2, pointu1, pointu2, pointt1, pointt2, pointw1, pointw2, bone1FileName, bone2FileName, bone3FileName, bone4FileName, bone5FileName, bone6FileName):
+    def createPC(pointg1, pointg2, pointb1, pointb2, pointy1, pointy2, pointr1, pointr2, pointo1, pointo2, pointp1, pointp2, pointu1, pointu2, pointt1, pointt2, pointw1, pointw2, bone1FileName, bone2FileName, bone3FileName, bone4FileName, bone5FileName, bone6FileName):
     
     #pointg1 = Green point on black
     #pointg2 = Green point on white
