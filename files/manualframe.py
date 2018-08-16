@@ -280,7 +280,7 @@ def euclideanDist(p1, p2):
     return dist
 
 # Function to export Point Cloud files from data
-def createPC(pointg1, pointg2, pointb1, pointb2, pointy1, pointy2, pointr1, pointr2, pointo1, pointo2, pointp1, pointp2, pointu1, pointu2, pointt1, pointt2, pointw1, pointw2, lunateFileName, capitateFileName, hamateFileName, scaphoidFileName, trapezoidFileName, triquetrumFileName):
+def createPC(pointg1, pointg2, pointb1, pointb2, pointy1, pointy2, pointr1, pointr2, pointo1, pointo2, pointp1, pointp2, pointu1, pointu2, pointt1, pointt2, pointw1, pointw2, bone1FileName, bone2FileName, bone3FileName, bone4FileName, bone5FileName, bone6FileName):
     # Plane #1 is defined by grellow, pink, and blue (arbitrary) on black
     vertex1 = np.array([(-pointw1[2]*2/3, pointw1[0]*2/3, -pointw1[1]*2/3),
                   (-pointp1[2]*2/3, pointp1[0]*2/3, -pointp1[1]*2/3),
@@ -372,12 +372,12 @@ def createPC(pointg1, pointg2, pointb1, pointb2, pointy1, pointy2, pointr1, poin
                       ('blue', 'u1')])
 
     # Saves Point Cloud files under the given names (I have been changing it every time I want to make a new set of Point Clouds, otherwise it overwrites the previous file with the same name)
-    PlyData([PlyElement.describe(vertex1, 'vertex'),PlyElement.describe(face1, 'face')]).write(lunateFileName)
-    PlyData([PlyElement.describe(vertex2, 'vertex'),PlyElement.describe(face2, 'face')]).write(trapezoidFileName)
-    PlyData([PlyElement.describe(vertex3, 'vertex'),PlyElement.describe(face3, 'face')]).write(hamateFileName)
-    PlyData([PlyElement.describe(vertex4, 'vertex'),PlyElement.describe(face4, 'face')]).write(capitateFileName)
-    PlyData([PlyElement.describe(vertex5, 'vertex'),PlyElement.describe(face5, 'face')]).write(triquetrumFileName)
-    PlyData([PlyElement.describe(vertex6, 'vertex'),PlyElement.describe(face6, 'face')]).write(scaphoidFileName)
+    PlyData([PlyElement.describe(vertex1, 'vertex'),PlyElement.describe(face1, 'face')]).write(bone1FileName)
+    PlyData([PlyElement.describe(vertex2, 'vertex'),PlyElement.describe(face2, 'face')]).write(bone2FileName)
+    PlyData([PlyElement.describe(vertex3, 'vertex'),PlyElement.describe(face3, 'face')]).write(bone3FileName)
+    PlyData([PlyElement.describe(vertex4, 'vertex'),PlyElement.describe(face4, 'face')]).write(bone4FileName)
+    PlyData([PlyElement.describe(vertex5, 'vertex'),PlyElement.describe(face5, 'face')]).write(bone5FileName)
+    PlyData([PlyElement.describe(vertex6, 'vertex'),PlyElement.describe(face6, 'face')]).write(bone6FileName)
 
 # Keep looping
 while True:
