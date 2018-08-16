@@ -114,6 +114,26 @@ Pitch:
     #bone5FileName = 'bone5FileName.ply'
     #bone6FileName = 'bone6FileName.ply'
 
+## Color-Code Chart (for dots)
+|Color|1 Letter Abbreviation|HSV Lower|HSV Upper|Number Code (Black and White only)|
+|:----|:--------------------|:--------|:--------|:---------------------------------|
+|Black|k|(0,0,0)|(180,255,49)|1|
+|White|i|(0,0,240)|(180,20,255)|2|
+|Green|g|(61,86,50)|(80,255,255)||
+|Blue|b|(101,86,50)|(115,255,255)||
+|Yellow|y|(16,108,50)|(40,255,255)||
+|Red|r|(171,86,50)|(180,255,255)||
+|"  "|" "|(0,100,50)|(6,255,255)||
+|Orange|o|(7,100,50)|(15,255,255)||
+|Pink|p|(155,30,50)|(170,255,255)||
+|Purple|u|(116,51,40)|(154,255,255)||
+|Turquoise|t|(81,100,60)|(100,255,255)||
+|Grellow (Green-Yellow)|w|(41,100,50)|(60,255,255)||
+
+*Note: The HSV scale used in the programs is H: 0-180; S: 0-255; V: 0-255. This is different from the traditional scale for HSV, which is H: 0-360; S: 0-100%; V: 0-100%.*
+
+*Note: Red has two separate HSV ranges because red is at both the upper and lower ends of the [hue spectrum](https://upload.wikimedia.org/wikipedia/commons/a/ad/HueScale.svg).*
+
 ## Example Uses
 *Note: Animated GIFs are composed of Point Cloud files rendered in MeshLab*
 
