@@ -22,6 +22,12 @@ In order to run, they will need to be in the same directory as the [pyrealsense2
 
 *Python:* The 3D Bone Tracking Tool programs work exclusively with Python 2.7 (32-bit), restricted by the requirements for the Intel® RealSense™ D400 series.
 
+## Running the Programs
+
+1. Open a Terminal/Shell
+2. Change the directory to where the files are housed (type ***cd DIRECTORY_NAME***)
+3. Run the python file (either type ***python manualframe.py*** or ***python speedcam.py***)
+
 ## Functions and Parameters
 
 *Vector Normailzation function:*
