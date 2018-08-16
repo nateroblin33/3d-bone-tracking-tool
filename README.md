@@ -24,11 +24,15 @@ In order to run, they will need to be in the same directory as the [pyrealsense2
 
 ## Running the Programs
 
-1. Open a Terminal/Shell
-2. Change the directory to where the files are housed (type ***cd DIRECTORY_NAME***)
-3. Run the python file (either type ***python manualframe.py*** or ***python speedcam.py***)
+1. Open a Terminal/Shell.
+2. Change the directory to where the files are housed (type ***cd DIRECTORY_NAME***).
+3. Run the python file (either type ***python manualframe.py*** or ***python speedcam.py***).
+4. Press "c" to calibrate angle measurements when all colored dots are being tracked correctly.
+5. *For **manualframe.py**, press "n" to save data from a frame. If all dots are being tracked, the txt file and corresponding Point Cloud file will save correctly (if not, the frame counter won't increase and you can press "n" again to retake that frame). The next time "n" is pressed, the frame counter will increase and a new set of frame data will be saved. If the frame saves correctly but the data shows that not all of the dots were correctly tracked (in the right places), press "f" to retake that frame (overwrite a bad frame), then continue once the frame looks right.*
+6. *For **speedcam.py**, frame data will save automatically at 10 fps. If not all dots are being tracked during a frame, that frame will automatically be discarded and the frame counter will not increase until the next success frame.*
+7. Press "q" to quit the program and stop the RealSense™ stream.
 
-## Functions and Parameters
+## Functions and Parameters defined within the programs
 
 *Vector Normailzation function:*
 
