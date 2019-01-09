@@ -1,7 +1,7 @@
 ![logo3DBTThttps://cdn.pbrd.co/images/HzjQAxU.png](https://cdn.pbrd.co/images/HzjSbKT.png "3D Bone Tracking Tool Logo")
 # 3D Bone Tracking Tool
 
-The 3D Bone Tracking Tool is a pair of Python 2.7 programs that interface with Intel® RealSense™ depth cameras (D400 series). The purpose of these is programs is to track the movement of bones in 3D space - tracking both real-world (x,y,z) coordinates and angles of rotation (roll, yaw, and pitch) using colored dots.
+The 3D Bone Tracking Tool is a pair of Python 2.7 programs that interface with Intel® RealSense™ depth cameras (D400 series). The purpose of these programs is to track the movement of bones in 3D space - tracking both real-world (x,y,z) coordinates and angles of rotation (roll, yaw, and pitch) using colored dots.
 
 |Program|Description|
 |:------|:----------|
@@ -146,3 +146,34 @@ This example shows how each program tracks the carpal (wrist) bones when the a h
 
 #### speedcam.py
 ![shortRTanimation](https://cdn.pbrd.co/images/HzklWxi.gif "Carpal Animation - speedcam.py")
+
+# Tendon Strain Tool
+
+The Tendon Strain Tool is a Python 2.7 program that interfaces with Intel® RealSense™ depth cameras (D400 series). The purpose of this program is to track the strain in tendons using euclidean distances in 3D space by tracking real-world (x,y,z) coordinates.
+
+|Program|Description|
+|:------|:----------|
+|tendonstrain.py|Automatically saves data from every frame (1-2 fps) after calibrating (real-time tracking)|
+
+The program can be run directly from the shell.
+
+## Download
+
+The Tendon Strain Tool program can be installed [here](https://github.com/nateroblin33/3d-bone-tracking-tool/tree/master/files).
+
+In order to run, it will need to be in the same directory as the [pyrealsense2](https://pypi.python.org/pypi/pyrealsense2) (instructions for installation [here](https://github.com/IntelRealSense/librealsense/tree/master/wrappers/python), or **copy pyrealsense2.pyd and pyrealsense2.cp36-win32.pyd from Program Files (x86)/Intel RealSense SDK 2.0/bin/x86 into your directory**) and [imutils](https://github.com/jrosebr1/imutils) ("Clone or download" as a .zip folder, then extract and move the "imutils" *subfolder* to the directory) packages, as well as [plyfile.py](https://github.com/dranjan/python-plyfile/blob/master/plyfile.py).
+
+## Platform & Python Version
+
+*Platform:* The 3D Bone Tracking Tool programs work exclusively on Windows 10, restricted by the requirements for the Intel® RealSense™ D400 series.
+
+*Python:* The 3D Bone Tracking Tool programs work exclusively with Python 2.7 (32-bit), restricted by the requirements for the Intel® RealSense™ D400 series.
+
+## Running the Programs
+
+1. Open a Terminal/Shell.
+2. Change the directory to where the files are housed (type ***cd DIRECTORY_NAME***).
+3. Run the python file (type ***python tendonstrain.py***).
+4. Press "c" to calibrate starting lengths when all 3 colored dots (blue, green, yellow) are being tracked correctly.
+5. Frame data will save automatically at somewhere between 1 and 2 fps.
+6. Press "q" repeatedly to quit the program and stop the RealSense™ stream. (Keep pressing q over and over until the stream stops).
