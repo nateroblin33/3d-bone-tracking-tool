@@ -157,6 +157,10 @@ The Tendon Strain Tool is a Python 2.7 program that interfaces with Intel® Real
 
 The program can be run directly from the shell.
 
+## READ BEFORE USE!!!
+
+For the program to work (***as of right now***), the central color (that lengths are measured *to*) must be **blue** and the other colors must be **green** and **yellow**.
+
 ## Download
 
 The Tendon Strain Tool program can be installed [here](https://github.com/nateroblin33/3d-bone-tracking-tool/tree/master/files).
