@@ -165,9 +165,9 @@ In order to run, it will need to be in the same directory as the [pyrealsense2](
 
 ## Platform & Python Version
 
-*Platform:* The 3D Bone Tracking Tool programs work exclusively on Windows 10, restricted by the requirements for the Intel® RealSense™ D400 series.
+*Platform:* The Tendon Strain Tool program works exclusively on Windows 10, restricted by the requirements for the Intel® RealSense™ D400 series.
 
-*Python:* The 3D Bone Tracking Tool programs work exclusively with Python 2.7 (32-bit), restricted by the requirements for the Intel® RealSense™ D400 series.
+*Python:* The Tendon Strain Tool program works exclusively with Python 2.7 (32-bit), restricted by the requirements for the Intel® RealSense™ D400 series.
 
 ## Running the Program
 
