@@ -153,7 +153,7 @@ The Tendon Strain Tool is a Python 2.7 program that interfaces with Intel® Real
 
 |Program|Description|
 |:------|:----------|
-|tendonstrain.py|Automatically saves data from every frame (1-2 fps) after calibrating (real-time tracking)|
+|tendonstrain.py|Automatically saves data from every frame (≤ 1 fps) after calibrating (real-time tracking)|
 
 The program can be run directly from the shell.
 
@@ -175,7 +175,7 @@ In order to run, it will need to be in the same directory as the [pyrealsense2](
 2. Change the directory to where the files are housed (type ***cd DIRECTORY_NAME***).
 3. Run the python file (type ***python tendonstrain.py***).
 4. Press "c" to calibrate starting lengths when all 3 colored dots (blue, green, yellow) are being tracked correctly.
-5. Frame data will save automatically at somewhere between 1 and 2 fps.
+5. Frame data will save automatically at somewhere ≤ 1 fps.
 6. Press "q" repeatedly to quit the program and stop the RealSense™ stream. (Keep pressing q over and over until the stream stops).
 
 ## Example Use
