@@ -1754,8 +1754,9 @@ while True:
         if start == 0:
             dtNOW = datetime.now()
             day = str(dtNOW).split()
-            time = day[1].split('.')
-            dtFix = day[0] + "_" + time[0] + "_" + time[1]
+            time3 = day[1].split('.')
+            time2 = time3[0].split(':')
+            dtFix = day[0] + "_" + time2[0] + "_" + time2[1] + "_" + time2[2] + "_" + time3[1]
         if ryp == 8:
             start = 1
         
